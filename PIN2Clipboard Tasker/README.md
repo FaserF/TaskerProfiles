@@ -7,6 +7,7 @@ Thanks to XDA for the base project and their great tasker ideas! https://www.xda
 ## Description
 
 This Project was made to speed up 2 Factor Authentication on Android with Tasker.
+Why this one and not the one from XDA: With my project there is no need to pay for any other app or install more apps than Tasker itself. Furthermore I support Pushbullet :)
 
 
 ## How-to-use
