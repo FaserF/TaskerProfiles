@@ -1,10 +1,12 @@
 # Check Rain Tasks
-Customizable rain notifications for tasker. Get rain notifications in the morning if it is going to rain during the day. Check continuously for rain and get notified. Know if tomorrow is going to rain.
+Customizable rain notifications for tasker. Get rain notifications in the morning if it is going to rain during the day. 
+This project is based on the work from javiertury tasker-check-rai https//github.com/javiertury/tasker-check-rain?files=1
+Even this description is based on his work :) so be sure to check his githun out. He has a lot more options, i have only improved the morning optioj to my own needs.
 
 Requirements
   * These tasks are for the android app [Tasker](http://tasker.dinglisch.net/)
   * You need an API key from [openweathermap.org](http://openweathermap.org/appid)
-  * Lastly, these tasks are configured to launch [Forecastie](https://github.com/martykan/forecastie) by default, although it can be changed.
+
 
 # Installation
 The folder `check-rain` in this repo contains 2 folders, `profiles` and `tasks`. Copy those 2 folders to your android device, preferably to `/sdcard/Tasker`.
