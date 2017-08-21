@@ -1,4 +1,4 @@
-# Phone Lost Tasker Project
+# PIN TO CLIPBOARD Tasker Project
 
 
 Thanks to XDA for the base project and their great tasker ideas! https://www.xda-developers.com/2-factor-authentication-tasker-android/
