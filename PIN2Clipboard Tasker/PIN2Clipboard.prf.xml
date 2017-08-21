@@ -81,7 +81,7 @@
 			<code>277269574</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<com.pushbullet.android.tasker.ACCOUNT_NAME>fabianseitz98@gmail.com</com.pushbullet.android.tasker.ACCOUNT_NAME>
+					<com.pushbullet.android.tasker.ACCOUNT_NAME></com.pushbullet.android.tasker.ACCOUNT_NAME>
 					<com.pushbullet.android.tasker.ACCOUNT_NAME-type>java.lang.String</com.pushbullet.android.tasker.ACCOUNT_NAME-type>
 					<com.pushbullet.android.tasker.BODY>%auth1</com.pushbullet.android.tasker.BODY>
 					<com.pushbullet.android.tasker.BODY-type>java.lang.String</com.pushbullet.android.tasker.BODY-type>
