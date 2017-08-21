@@ -1,0 +1,40 @@
+<TaskerData sr="" dvi="1" tv="5.0u4m">
+	<Profile sr="prof21" ve="2">
+		<cdate>1481150378064</cdate>
+		<clp>true</clp>
+		<edate>1496035902854</edate>
+		<id>21</id>
+		<mid0>22</mid0>
+		<mid1>6</mid1>
+		<nme>Video App</nme>
+		<App sr="con0" ve="2">
+			<cls0>com.oneplus.gallery.OPGalleryActivity</cls0>
+			<cls1>com.google.android.youtube.app.honeycomb.Shell$HomeActivity</cls1>
+			<flags>2</flags>
+			<label0>Gallery</label0>
+			<label1>YouTube</label1>
+			<pkg0>com.oneplus.gallery</pkg0>
+			<pkg1>com.google.android.youtube</pkg1>
+		</App>
+	</Profile>
+	<Task sr="task22">
+		<cdate>1481150390325</cdate>
+		<edate>1482331512911</edate>
+		<id>22</id>
+		<nme>Auto Rotate</nme>
+		<Action sr="act0" ve="7">
+			<code>822</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1481150504614</cdate>
+		<edate>1482586203700</edate>
+		<id>6</id>
+		<nme>Auto Rotate Off</nme>
+		<Action sr="act0" ve="7">
+			<code>822</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>

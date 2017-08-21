@@ -1,0 +1,111 @@
+<TaskerData sr="" dvi="1" tv="5.0u4m">
+	<Profile sr="prof30" ve="2">
+		<cdate>1482343053718</cdate>
+		<edate>1503319918458</edate>
+		<id>30</id>
+		<mid0>52</mid0>
+		<nme>PIN2Clipboard</nme>
+		<Event sr="con0" ve="2">
+			<code>7</code>
+			<pri>0</pri>
+			<Int sr="arg0" val="2"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+		</Event>
+	</Profile>
+	<Task sr="task52">
+		<cdate>1502972522530</cdate>
+		<edate>1503319918458</edate>
+		<id>52</id>
+		<nme>Grab The Security code</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>598</code>
+			<Str sr="arg0" ve="3">%SMSRB</Str>
+			<Str sr="arg1" ve="3">(code|pin).*?\d+</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Str sr="arg5" ve="3">%code</Str>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%SMSRB</lhs>
+					<op>2</op>
+					<rhs>*PIN*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%SMSRB</lhs>
+					<op>2</op>
+					<rhs>*Code*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>598</code>
+			<Str sr="arg0" ve="3">%SMSRB</Str>
+			<Str sr="arg1" ve="3">^(.*?)\d+</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Str sr="arg5" ve="3">%code</Str>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%code1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>598</code>
+			<Str sr="arg0" ve="3">%code1</Str>
+			<Str sr="arg1" ve="3">\d+</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Str sr="arg5" ve="3">%auth</Str>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>105</code>
+			<Str sr="arg0" ve="3">%auth1</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>277269574</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.pushbullet.android.tasker.ACCOUNT_NAME>fabianseitz98@gmail.com</com.pushbullet.android.tasker.ACCOUNT_NAME>
+					<com.pushbullet.android.tasker.ACCOUNT_NAME-type>java.lang.String</com.pushbullet.android.tasker.ACCOUNT_NAME-type>
+					<com.pushbullet.android.tasker.BODY>%auth1</com.pushbullet.android.tasker.BODY>
+					<com.pushbullet.android.tasker.BODY-type>java.lang.String</com.pushbullet.android.tasker.BODY-type>
+					<com.pushbullet.android.tasker.PUSH_TYPE>note</com.pushbullet.android.tasker.PUSH_TYPE>
+					<com.pushbullet.android.tasker.PUSH_TYPE-type>java.lang.String</com.pushbullet.android.tasker.PUSH_TYPE-type>
+					<com.pushbullet.android.tasker.TARGET_EMAIL>&lt;null&gt;</com.pushbullet.android.tasker.TARGET_EMAIL>
+					<com.pushbullet.android.tasker.TARGET_EMAIL-type>java.lang.String</com.pushbullet.android.tasker.TARGET_EMAIL-type>
+					<com.pushbullet.android.tasker.TARGET_IDEN>ujzI1FFezwysjArHrh8WLA</com.pushbullet.android.tasker.TARGET_IDEN>
+					<com.pushbullet.android.tasker.TARGET_IDEN-type>java.lang.String</com.pushbullet.android.tasker.TARGET_IDEN-type>
+					<com.pushbullet.android.tasker.TITLE>Your security code is:</com.pushbullet.android.tasker.TITLE>
+					<com.pushbullet.android.tasker.TITLE-type>java.lang.String</com.pushbullet.android.tasker.TITLE-type>
+					<com.pushbullet.android.tasker.VERSION_CODE>1</com.pushbullet.android.tasker.VERSION_CODE>
+					<com.pushbullet.android.tasker.VERSION_CODE-type>java.lang.Integer</com.pushbullet.android.tasker.VERSION_CODE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Push a note titled "Your security code is:" with the message</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>com.pushbullet.android.tasker.TITLE com.pushbullet.android.tasker.BODY</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.pushbullet.android</Str>
+			<Str sr="arg2" ve="3">com.pushbullet.android.tasker.action.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
