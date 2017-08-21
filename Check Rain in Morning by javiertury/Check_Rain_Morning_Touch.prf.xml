@@ -1,0 +1,43 @@
+<TaskerData sr="" dvi="1" tv="5.0u4m">
+	<Profile sr="prof43" ve="2">
+		<cdate>1503144268579</cdate>
+		<clp>true</clp>
+		<edate>1503292874274</edate>
+		<id>43</id>
+		<mid0>40</mid0>
+		<nme>Check Rain Morning Touch</nme>
+		<Event sr="con0" ve="2">
+			<code>2000</code>
+			<pri>0</pri>
+			<App sr="arg0">
+				<appClass>net.dinglisch.android.taskerm.Tasker</appClass>
+				<appPkg>net.dinglisch.android.taskerm</appPkg>
+				<label>Tasker</label>
+			</App>
+			<Str sr="arg1" ve="3">%W_mor_title</Str>
+		</Event>
+	</Profile>
+	<Task sr="task40">
+		<cdate>1500941605250</cdate>
+		<edate>1503323549868</edate>
+		<id>40</id>
+		<nme>Check Rain - Clear Notify And Open Weather</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">%W_mor_title</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>net.oneplus.weather.app.MainActivity</appClass>
+				<appPkg>net.oneplus.weather</appPkg>
+				<label>Weather</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
