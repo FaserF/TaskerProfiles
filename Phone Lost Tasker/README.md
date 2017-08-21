@@ -17,9 +17,10 @@ Now once you have lost your phone just write an SMS from any phone to your phone
 If you have only left it somewhere in your house and you can't find it, it is better to text your phone with "Find Phone"
 
 For Users who want more security:
-5. now create a wallpaper which will contain as much informations as you can (Name, picture, email, adress and so on) and copy it to your phone to /Pictures/Wallpaper/Tasker (or change the location in the Lost Task!)
-6. Some things will only work when Tasker Secure Settings Plugin is installed. So go and get it from the Play Store!
-7. Download a Sound you want to hear when you send "Find Phone" to your phone. Then copy it to your phone and change the location to your song in the Find Task
+
+1. now create a wallpaper which will contain as much informations as you can (Name, picture, email, adress and so on) and copy it to your phone to /Pictures/Wallpaper/Tasker (or change the location in the Lost Task!)
+2. Some things will only work when Tasker Secure Settings Plugin is installed. So go and get it from the Play Store!
+3. Download a Sound you want to hear when you send "Find Phone" to your phone. Then copy it to your phone and change the location to your song in the Find Task
 
 ## What does it do?
 
