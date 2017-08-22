@@ -1,7 +1,7 @@
 # Check Rain Tasks
 Customizable rain notifications for tasker. Get rain notifications in the morning if it is going to rain during the day. 
-This project is based on the work from javiertury tasker-check-rai https//github.com/javiertury/tasker-check-rain?files=1
-Even this description is based on his work :) so be sure to check his githun out. He has a lot more options, i have only improved the morning optioj to my own needs.
+This project is based on the work from javiertury tasker-check-rain https://github.com/javiertury/tasker-check-rain
+Even this description is based on his work :) so be sure to check his githun out. He has a lot more options, i have only improved the morning option to my own needs.
 
 Requirements
   * These tasks are for the android app [Tasker](http://tasker.dinglisch.net/)
@@ -9,18 +9,13 @@ Requirements
 
 
 # Installation
-The folder `check-rain` in this repo contains 2 folders, `profiles` and `tasks`. Copy those 2 folders to your android device, preferably to `/sdcard/Tasker`.
-  1. Open tasker and then touch and hold on `TASKS` tab until a menu pops up.
+The folder `Check Rain in Morning by javiertury` in this repo contains 2 files. Copy those 2 files to your android device, preferably to `/sdcard/Tasker`.
+  1. Open tasker and then touch and hold on `PROFILES` tab until a menu pops up.
   2. Select `import`.
-  3. Browse the directory in which you put your `tasks` directory and open it.
+  3. Browse the directory in which you put your `Profiles` directory and open it.
   4. Import each profile one by one
-  5. Repeat steps 1-5 for the `profiles` directory to the tab `PROFILES`.
 
-Finally open tasker, go to `VARS` tab and create a variable named `%W_ow_key` with you openweathermap.org API key. There are 3 types of notifications: Morning, Continuous and Tomorrow. If you want to enable any of them, you have to enable each profile pair.
-```
-Check Rain <NOTIFICATION TYPE>
-Check Rain <NOTIFICATION TYPE> Touch
-```
+Finally open tasker, go to `VARS` tab and create a variable named `%W_ow_key` with you openweathermap.org API key. 
 
 # Configuration
 
@@ -30,15 +25,11 @@ These tasks automatically use your last know location using either gps or networ
 
 The specified city is common to all notification types. It's stored in the global variable `%W_loc_city` and follows the format `<city name>,<country ISO 3166 code>`, for example, `Boston,us`. For each type of notification you can set the location source to `city` to use the city specified in `%W_loc_city` or to `auto`(default).
   * For Morning notifications it is `%W_mor_lsrc`
-  * For Continuous notifications it is `%W_con_lsrc`
-  * For Tomorrow notifications it is `%W_tmw_lsrc`
   
 ## Notification titles and text
 
 You can customize the notification title using global variables. The title of the notifications must be stored in global variables so that these notifications can be automatically removed and the profiles `Check Rain <NOTIFICATION TYPE> Touch` can open an app when those notifications are touched.
   * For Morning notifications it is `%W_mor_title`
-  * For Continuous notifications it is `%W_con_title`
-  * For Tomorrow notifications it is `%W_tmw_title`
   
 The text of those notifications can be set modifying the the action `Notifiy Sound` inside each notification type task.
 
